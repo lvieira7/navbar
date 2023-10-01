@@ -11,7 +11,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 5px 15px;
     align-items: center;
 }
 
@@ -21,15 +21,19 @@ a {
     color: #34495e;
 }
 
+.nav-item {
+    transition: transform 100ms linear;
+}
+
 .logo {
-    font-size: 12px;
+    font-size: 10px;
     padding-inline-start: 12px;
 }
 
 .main-nav ul {
     list-style-type: none;
     display: flex;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 .main-nav li {
@@ -39,12 +43,9 @@ a {
 header {
     background: #e7e6e6;
     padding: 11px 0;
+    box-shadow: 10px 2px 15px #4f637896;
 }
 
-.main-nav a {
-    transition: color 0.4s cubic-bezier(0.2, 0, 0, 1);
-}
-
-.main-nav a:hover {
-    color: #03dee7;
+.nav-item:hover {
+    transform: scale(1.1);
 }
